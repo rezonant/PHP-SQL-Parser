@@ -46,9 +46,37 @@ The focus of the parser is complete and accurate support for the MySQL SQL diale
 
 [Documentation](https://rezonant.github.io/PHP-SQL-Parser/doc/class-PHPSQLParser.PHPSQLParser.html) - API documentation
 
-###Example Output
+### Installation
 
-**Example Query**
+Install with composer:
+
+```shell
+composer require greenlion/php-sql-parser
+```
+
+### Usage
+
+Call the parser with:
+
+```php
+
+use PHPSQLParser\PHPSQLParser;
+$parser = new PHPSQLParser();
+$parsed = $parser->parse($sql);
+print_r($parsed);
+```
+
+### Statements
+
+```php
+$parser = new PHPSQLParser('select 2');
+$creator = new PHPSQLCreator();
+$statement = $creator->create($parser->parsed);
+```
+
+### Example Output
+
+Given an SQL query such as:
 
 ```sql
 SELECT STRAIGHT_JOIN a, b, c 
@@ -56,7 +84,7 @@ SELECT STRAIGHT_JOIN a, b, c
  WHERE d > 5;
 ```
 
-**Example Output (via print_r)**
+The parse() method will produce the following result (via print_r):
 
 ```php
 Array
@@ -136,3 +164,11 @@ Array
 
 )
 ```
+
+### Parse tree overview
+
+The parsed representation returned by php-sql-parser is an associative array of important SQL sections and the information about the clauses in each of those sections. Because this is easier to visualize, I'll provide a simple example. As I said, the parser splits up the query into sections. Later the manual will describe what sections are available each of the supported SQL statement types.
+
+In the example the given query has three sections: **SELECT,FROM,WHERE**. You will see each of these sections in the parser output. Each of those sections contain items. Each item represents a keyword, a literal value, a subquery, an expression or a column reference.
+
+In the following example, the **SELECT** section contains one item which is a column reference (colref). The FROM clause contains only one table. You'll notice that it still says 'JOIN'. Don't be confused by this. Every table item is a join, but it may not have any join critera. Finally, the where clause consists of three items, a colref, an operator and a literal value (const).
