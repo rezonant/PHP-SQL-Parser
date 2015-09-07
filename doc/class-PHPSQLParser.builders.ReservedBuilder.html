@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class PHPSQLParser\builders\ReservedBuilder</title>
+
+	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
+	<script type="text/javascript" src="elementlist.js?308444134"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="namespace-PHPSQLParser.html">PHPSQLParser<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-PHPSQLParser.builders.html">builders</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.exceptions.html">exceptions</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.lexer.html">lexer</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.positions.html">positions</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.processors.html">processors</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.utils.html">utils</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-PHPSQLParser.builders.AliasBuilder.html">AliasBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.AliasReferenceBuilder.html">AliasReferenceBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.BracketStatementBuilder.html">BracketStatementBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CharacterSetBuilder.html">CharacterSetBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CheckBuilder.html">CheckBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CollationBuilder.html">CollationBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ColumnDefinitionBuilder.html">ColumnDefinitionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ColumnListBuilder.html">ColumnListBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ColumnReferenceBuilder.html">ColumnReferenceBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ColumnTypeBracketExpressionBuilder.html">ColumnTypeBracketExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ColumnTypeBuilder.html">ColumnTypeBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ConstantBuilder.html">ConstantBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ConstraintBuilder.html">ConstraintBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CreateBuilder.html">CreateBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CreateIndexBuilder.html">CreateIndexBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CreateIndexOptionsBuilder.html">CreateIndexOptionsBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CreateIndexTableBuilder.html">CreateIndexTableBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CreateIndexTypeBuilder.html">CreateIndexTypeBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CreateStatementBuilder.html">CreateStatementBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CreateTableBuilder.html">CreateTableBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CreateTableDefinitionBuilder.html">CreateTableDefinitionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CreateTableOptionsBuilder.html">CreateTableOptionsBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CreateTableSelectOptionBuilder.html">CreateTableSelectOptionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.DatabaseBuilder.html">DatabaseBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.DataTypeBuilder.html">DataTypeBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.DefaultValueBuilder.html">DefaultValueBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.DeleteBuilder.html">DeleteBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.DeleteStatementBuilder.html">DeleteStatementBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.DirectionBuilder.html">DirectionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.DropExpressionBuilder.html">DropExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.DropStatementBuilder.html">DropStatementBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.EngineBuilder.html">EngineBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ForeignKeyBuilder.html">ForeignKeyBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ForeignRefBuilder.html">ForeignRefBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.FromBuilder.html">FromBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.FunctionBuilder.html">FunctionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.GroupByAliasBuilder.html">GroupByAliasBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.GroupByBuilder.html">GroupByBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.HavingBracketExpressionBuilder.html">HavingBracketExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.HavingBuilder.html">HavingBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.HavingExpressionBuilder.html">HavingExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.IndexAlgorithmBuilder.html">IndexAlgorithmBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.IndexColumnBuilder.html">IndexColumnBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.IndexCommentBuilder.html">IndexCommentBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.IndexHintListBuilder.html">IndexHintListBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.IndexKeyBuilder.html">IndexKeyBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.IndexLockBuilder.html">IndexLockBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.IndexParserBuilder.html">IndexParserBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.IndexSizeBuilder.html">IndexSizeBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.IndexTypeBuilder.html">IndexTypeBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.InListBuilder.html">InListBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.InsertBuilder.html">InsertBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.InsertColumnListBuilder.html">InsertColumnListBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.InsertStatementBuilder.html">InsertStatementBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.JoinBuilder.html">JoinBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.LikeBuilder.html">LikeBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.LikeExpressionBuilder.html">LikeExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.LimitBuilder.html">LimitBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.OperatorBuilder.html">OperatorBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.OrderByAliasBuilder.html">OrderByAliasBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.OrderByBracketExpressionBuilder.html">OrderByBracketExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.OrderByBuilder.html">OrderByBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.OrderByColumnReferenceBuilder.html">OrderByColumnReferenceBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.OrderByExpressionBuilder.html">OrderByExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.OrderByFunctionBuilder.html">OrderByFunctionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.OrderByReservedBuilder.html">OrderByReservedBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.PositionBuilder.html">PositionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.PrimaryKeyBuilder.html">PrimaryKeyBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ProcedureBuilder.html">ProcedureBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.QueryBuilder.html">QueryBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.RecordBuilder.html">RecordBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.RefClauseBuilder.html">RefClauseBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.RefTypeBuilder.html">RefTypeBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.RenameStatementBuilder.html">RenameStatementBuilder</a></li>
+				<li class="active"><a href="class-PHPSQLParser.builders.ReservedBuilder.html">ReservedBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.SchemaBuilder.html">SchemaBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.SelectBracketExpressionBuilder.html">SelectBracketExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.SelectBuilder.html">SelectBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.SelectExpressionBuilder.html">SelectExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.SelectStatementBuilder.html">SelectStatementBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.SetBuilder.html">SetBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.SetExpressionBuilder.html">SetExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ShowBuilder.html">ShowBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ShowStatementBuilder.html">ShowStatementBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.SignBuilder.html">SignBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.SubQueryBuilder.html">SubQueryBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.SubTreeBuilder.html">SubTreeBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.TableBracketExpressionBuilder.html">TableBracketExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.TableBuilder.html">TableBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.TableExpressionBuilder.html">TableExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.TempTableBuilder.html">TempTableBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.UpdateBuilder.html">UpdateBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.UpdateStatementBuilder.html">UpdateStatementBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.UserVariableBuilder.html">UserVariableBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ValuesBuilder.html">ValuesBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ViewBuilder.html">ViewBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.WhereBracketExpressionBuilder.html">WhereBracketExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.WhereBuilder.html">WhereBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.WhereExpressionBuilder.html">WhereExpressionBuilder</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-PHPSQLParser.builders.Builder.html">Builder</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-PHPSQLParser.builders.html" title="Summary of PHPSQLParser\builders"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ReservedBuilder</h1>
+
+
+	<div class="description">
+	
+<p>This class implements the builder for reserved keywords. You can overwrite
+all functions to achieve another handling.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>PHPSQLParser\builders\ReservedBuilder</span></b>			
+			 implements 
+				<a href="class-PHPSQLParser.builders.Builder.html"><span>PHPSQLParser\builders\Builder</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-PHPSQLParser.builders.OrderByReservedBuilder.html">PHPSQLParser\builders\OrderByReservedBuilder</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-PHPSQLParser.html">PHPSQLParser</a>\<a href="namespace-PHPSQLParser.builders.html">builders</a><br>
+		
+
+				<b>License:</b>
+				<a href="http://www.debian.org/misc/bsd.license">BSD License (3 Clause)</a><br>
+				<b>Author:</b>
+				André Rothe &lt;<a
+href="mailto:andre.rothe&#64;phosco.info">andre.rothe&#64;<!-- -->phosco.info</a>&gt;<br>
+		<b>Located at</b> <a href="source-class-PHPSQLParser.builders.ReservedBuilder.html#45-65" title="Go to source code">PHPSQLParser/builders/ReservedBuilder.php</a><br>
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="isReserved" id="_isReserved">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isReserved">#</a>
+		<code><a href="source-class-PHPSQLParser.builders.ReservedBuilder.html#55-57" title="Go to source code">isReserved</a>( <span>mixed <var>$parsed</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="build" id="_build">
+
+		<td class="attributes"><code>
+			 public 
+			A
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_build">#</a>
+		<code><a href="source-class-PHPSQLParser.builders.ReservedBuilder.html#59-64" title="Go to source code">build</a>( <span>array <var>$parsed</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Builds a part of an SQL statement.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Builds a part of an SQL statement.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parsed</var></dt>
+					<dd><code>array</code><br>$parsed a subtree of the PHPSQLParser output array</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>A</code><br>string, which contains a part of an SQL statement.<br>
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-PHPSQLParser.builders.Builder.html#_build">PHPSQLParser\builders\Builder::build()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

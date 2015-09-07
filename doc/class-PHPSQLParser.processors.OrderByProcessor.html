@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class PHPSQLParser\processors\OrderByProcessor</title>
+
+	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
+	<script type="text/javascript" src="elementlist.js?308444134"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="namespace-PHPSQLParser.html">PHPSQLParser<span></span></a>
+						<ul>
+				<li><a href="namespace-PHPSQLParser.builders.html">builders</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.exceptions.html">exceptions</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.lexer.html">lexer</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.positions.html">positions</a>
+						</li>
+				<li class="active"><a href="namespace-PHPSQLParser.processors.html">processors</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.utils.html">utils</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-PHPSQLParser.processors.AbstractProcessor.html">AbstractProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.BracketProcessor.html">BracketProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.ColumnDefinitionProcessor.html">ColumnDefinitionProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.ColumnListProcessor.html">ColumnListProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.CreateDefinitionProcessor.html">CreateDefinitionProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.CreateProcessor.html">CreateProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.DefaultProcessor.html">DefaultProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.DeleteProcessor.html">DeleteProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.DescProcessor.html">DescProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.DescribeProcessor.html">DescribeProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.DropProcessor.html">DropProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.DuplicateProcessor.html">DuplicateProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.ExplainProcessor.html">ExplainProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.ExpressionListProcessor.html">ExpressionListProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.FromProcessor.html">FromProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.GroupByProcessor.html">GroupByProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.HavingProcessor.html">HavingProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.IndexColumnListProcessor.html">IndexColumnListProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.IndexProcessor.html">IndexProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.InsertProcessor.html">InsertProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.IntoProcessor.html">IntoProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.LimitProcessor.html">LimitProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.OptionsProcessor.html">OptionsProcessor</a></li>
+				<li class="active"><a href="class-PHPSQLParser.processors.OrderByProcessor.html">OrderByProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.PartitionDefinitionProcessor.html">PartitionDefinitionProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.PartitionOptionsProcessor.html">PartitionOptionsProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.RecordProcessor.html">RecordProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.ReferenceDefinitionProcessor.html">ReferenceDefinitionProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.RenameProcessor.html">RenameProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.ReplaceProcessor.html">ReplaceProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.SelectExpressionProcessor.html">SelectExpressionProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.SelectProcessor.html">SelectProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.SetProcessor.html">SetProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.ShowProcessor.html">ShowProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.SQLChunkProcessor.html">SQLChunkProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.SQLProcessor.html">SQLProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.SubpartitionDefinitionProcessor.html">SubpartitionDefinitionProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.TableProcessor.html">TableProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.UnionProcessor.html">UnionProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.UpdateProcessor.html">UpdateProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.UsingProcessor.html">UsingProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.ValuesProcessor.html">ValuesProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.WhereProcessor.html">WhereProcessor</a></li>
+				<li><a href="class-PHPSQLParser.processors.WithProcessor.html">WithProcessor</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-PHPSQLParser.processors.html" title="Summary of PHPSQLParser\processors"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class OrderByProcessor</h1>
+
+
+	<div class="description">
+	
+<p>This class processes the ORDER-BY statements.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-PHPSQLParser.processors.AbstractProcessor.html"><span>PHPSQLParser\processors\AbstractProcessor</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>PHPSQLParser\processors\OrderByProcessor</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-PHPSQLParser.processors.GroupByProcessor.html">PHPSQLParser\processors\GroupByProcessor</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-PHPSQLParser.html">PHPSQLParser</a>\<a href="namespace-PHPSQLParser.processors.html">processors</a><br>
+		
+
+				<b>License:</b>
+				<a href="http://www.debian.org/misc/bsd.license">BSD License (3 Clause)</a><br>
+				<b>Author:</b>
+				André Rothe &lt;<a
+href="mailto:andre.rothe&#64;phosco.info">andre.rothe&#64;<!-- -->phosco.info</a>&gt;<br>
+		<b>Located at</b> <a href="source-class-PHPSQLParser.processors.OrderByProcessor.html#45-136" title="Go to source code">PHPSQLParser/processors/OrderByProcessor.php</a><br>
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="processSelectExpression" id="_processSelectExpression">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_processSelectExpression">#</a>
+		<code><a href="source-class-PHPSQLParser.processors.OrderByProcessor.html#54-57" title="Go to source code">processSelectExpression</a>( <span>mixed <var>$unparsed</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="initParseInfo" id="_initParseInfo">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initParseInfo">#</a>
+		<code><a href="source-class-PHPSQLParser.processors.OrderByProcessor.html#59-61" title="Go to source code">initParseInfo</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="processOrderExpression" id="_processOrderExpression">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_processOrderExpression">#</a>
+		<code><a href="source-class-PHPSQLParser.processors.OrderByProcessor.html#63-102" title="Go to source code">processOrderExpression</a>( <span>mixed <var>&amp; $parseInfo</var></span>, <span>mixed <var>$select</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="process" id="_process">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_process">#</a>
+		<code><a href="source-class-PHPSQLParser.processors.OrderByProcessor.html#104-135" title="Go to source code">process</a>( <span>mixed <var>$tokens</var></span>, <span>mixed <var>$select</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>This function implements the main functionality of a processor class. Always
+use default valuses for additional parameters within overridden functions.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>This function implements the main functionality of a processor class. Always
+use default valuses for additional parameters within overridden functions.</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-PHPSQLParser.processors.AbstractProcessor.html#methods">PHPSQLParser\processors\AbstractProcessor</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-PHPSQLParser.processors.AbstractProcessor.html#_array_insert_after">array_insert_after()</a>, 
+			<a href="class-PHPSQLParser.processors.AbstractProcessor.html#_getVariableType">getVariableType()</a>, 
+			<a href="class-PHPSQLParser.processors.AbstractProcessor.html#_isAggregateFunction">isAggregateFunction()</a>, 
+			<a href="class-PHPSQLParser.processors.AbstractProcessor.html#_isBracketExpression">isBracketExpression()</a>, 
+			<a href="class-PHPSQLParser.processors.AbstractProcessor.html#_isColumnReference">isColumnReference()</a>, 
+			<a href="class-PHPSQLParser.processors.AbstractProcessor.html#_isCommaToken">isCommaToken()</a>, 
+			<a href="class-PHPSQLParser.processors.AbstractProcessor.html#_isCommentToken">isCommentToken()</a>, 
+			<a href="class-PHPSQLParser.processors.AbstractProcessor.html#_isConstant">isConstant()</a>, 
+			<a href="class-PHPSQLParser.processors.AbstractProcessor.html#_isCustomFunction">isCustomFunction()</a>, 
+			<a href="class-PHPSQLParser.processors.AbstractProcessor.html#_isExpression">isExpression()</a>, 
+			<a href="class-PHPSQLParser.processors.AbstractProcessor.html#_isFunction">isFunction()</a>, 
+			<a href="class-PHPSQLParser.processors.AbstractProcessor.html#_isReserved">isReserved()</a>, 
+			<a href="class-PHPSQLParser.processors.AbstractProcessor.html#_isSubQuery">isSubQuery()</a>, 
+			<a href="class-PHPSQLParser.processors.AbstractProcessor.html#_isWhitespaceToken">isWhitespaceToken()</a>, 
+			<a href="class-PHPSQLParser.processors.AbstractProcessor.html#_removeParenthesisFromStart">removeParenthesisFromStart()</a>, 
+			<a href="class-PHPSQLParser.processors.AbstractProcessor.html#_revokeQuotation">revokeQuotation()</a>, 
+			<a href="class-PHPSQLParser.processors.AbstractProcessor.html#_splitSQLIntoTokens">splitSQLIntoTokens()</a>, 
+			<a href="class-PHPSQLParser.processors.AbstractProcessor.html#_toArray">toArray()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class PHPSQLParser\positions\PositionCalculator</title>
+
+	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
+	<script type="text/javascript" src="elementlist.js?308444134"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="namespace-PHPSQLParser.html">PHPSQLParser<span></span></a>
+						<ul>
+				<li><a href="namespace-PHPSQLParser.builders.html">builders</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.exceptions.html">exceptions</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.lexer.html">lexer</a>
+						</li>
+				<li class="active"><a href="namespace-PHPSQLParser.positions.html">positions</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.processors.html">processors</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.utils.html">utils</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-PHPSQLParser.positions.PositionCalculator.html">PositionCalculator</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-PHPSQLParser.positions.html" title="Summary of PHPSQLParser\positions"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class PositionCalculator</h1>
+
+
+	<div class="description">
+	
+<p>This class implements the calculator for the string positions of the
+base_expr elements within the output of the PHPSQLParser.</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-PHPSQLParser.html">PHPSQLParser</a>\<a href="namespace-PHPSQLParser.positions.html">positions</a><br>
+		
+
+				<b>License:</b>
+				<a href="http://www.debian.org/misc/bsd.license">BSD License (3 Clause)</a><br>
+				<b>Author:</b>
+				André Rothe &lt;<a
+href="mailto:andre.rothe&#64;phosco.info">andre.rothe&#64;<!-- -->phosco.info</a>&gt;<br>
+		<b>Located at</b> <a href="source-class-PHPSQLParser.positions.PositionCalculator.html#48-261" title="Go to source code">PHPSQLParser/positions/PositionCalculator.php</a><br>
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-PHPSQLParser.positions.PositionCalculator.html#96-103" title="Go to source code">__construct</a>( )</code>
+
+		<div class="description short">
+			
+<p>Constructor.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Constructor.</p>
+
+<p>It initializes some fields.</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="printPos" id="_printPos">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_printPos">#</a>
+		<code><a href="source-class-PHPSQLParser.positions.PositionCalculator.html#105-120" title="Go to source code">printPos</a>( <span>mixed <var>$text</var></span>, <span>mixed <var>$sql</var></span>, <span>mixed <var>$charPos</var></span>, <span>mixed <var>$key</var></span>, <span>mixed <var>$parsed</var></span>, <span>mixed <var>$backtracking</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPositionsWithinSQL" id="_setPositionsWithinSQL">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPositionsWithinSQL">#</a>
+		<code><a href="source-class-PHPSQLParser.positions.PositionCalculator.html#122-127" title="Go to source code">setPositionsWithinSQL</a>( <span>mixed <var>$sql</var></span>, <span>mixed <var>$parsed</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="findPositionWithinString" id="_findPositionWithinString">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_findPositionWithinString">#</a>
+		<code><a href="source-class-PHPSQLParser.positions.PositionCalculator.html#129-189" title="Go to source code">findPositionWithinString</a>( <span>mixed <var>$sql</var></span>, <span>mixed <var>$value</var></span>, <span>mixed <var>$expr_type</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="lookForBaseExpression" id="_lookForBaseExpression">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_lookForBaseExpression">#</a>
+		<code><a href="source-class-PHPSQLParser.positions.PositionCalculator.html#191-260" title="Go to source code">lookForBaseExpression</a>( <span>mixed <var>$sql</var></span>, <span>mixed <var>&amp; $charPos</var></span>, <span>mixed <var>&amp; $parsed</var></span>, <span>mixed <var>$key</var></span>, <span>mixed <var>&amp; $backtracking</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="allowedOnOperator" id="$allowedOnOperator">
+		<td class="attributes"><code>
+			protected static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPSQLParser.positions.PositionCalculator.html#58-59" title="Go to source code"><var>$allowedOnOperator</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(<span class="php-quote">&quot;\t&quot;</span>, <span class="php-quote">&quot;\n&quot;</span>, <span class="php-quote">&quot;\r&quot;</span>, <span class="php-quote">&quot; &quot;</span>, <span class="php-quote">&quot;,&quot;</span>, <span class="php-quote">&quot;(&quot;</span>, <span class="php-quote">&quot;)&quot;</span>, <span class="php-quote">&quot;_&quot;</span>, <span class="php-quote">&quot;'&quot;</span>, <span class="php-quote">&quot;\&quot;&quot;</span>, <span class="php-quote">&quot;?&quot;</span>, <span class="php-quote">&quot;@&quot;</span>, <span class="php-quote">&quot;0&quot;</span>,
+                                            <span class="php-quote">&quot;1&quot;</span>, <span class="php-quote">&quot;2&quot;</span>, <span class="php-quote">&quot;3&quot;</span>, <span class="php-quote">&quot;4&quot;</span>, <span class="php-quote">&quot;5&quot;</span>, <span class="php-quote">&quot;6&quot;</span>, <span class="php-quote">&quot;7&quot;</span>, <span class="php-quote">&quot;8&quot;</span>, <span class="php-quote">&quot;9&quot;</span>)</code></td>
+		<td class="description"><div>
+			<a href="#$allowedOnOperator" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="allowedOnOther" id="$allowedOnOther">
+		<td class="attributes"><code>
+			protected static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPSQLParser.positions.PositionCalculator.html#60-61" title="Go to source code"><var>$allowedOnOther</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(<span class="php-quote">&quot;\t&quot;</span>, <span class="php-quote">&quot;\n&quot;</span>, <span class="php-quote">&quot;\r&quot;</span>, <span class="php-quote">&quot; &quot;</span>, <span class="php-quote">&quot;,&quot;</span>, <span class="php-quote">&quot;(&quot;</span>, <span class="php-quote">&quot;)&quot;</span>, <span class="php-quote">&quot;&lt;&quot;</span>, <span class="php-quote">&quot;&gt;&quot;</span>, <span class="php-quote">&quot;*&quot;</span>, <span class="php-quote">&quot;+&quot;</span>, <span class="php-quote">&quot;-&quot;</span>, <span class="php-quote">&quot;/&quot;</span>, <span class="php-quote">&quot;|&quot;</span>,
+                                         <span class="php-quote">&quot;&amp;&quot;</span>, <span class="php-quote">&quot;=&quot;</span>, <span class="php-quote">&quot;!&quot;</span>, <span class="php-quote">&quot;;&quot;</span>)</code></td>
+		<td class="description"><div>
+			<a href="#$allowedOnOther" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="flippedBacktrackingTypes" id="$flippedBacktrackingTypes">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPSQLParser.positions.PositionCalculator.html#63" title="Go to source code"><var>$flippedBacktrackingTypes</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$flippedBacktrackingTypes" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="backtrackingTypes" id="$backtrackingTypes">
+		<td class="attributes"><code>
+			protected static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPSQLParser.positions.PositionCalculator.html#64-94" title="Go to source code"><var>$backtrackingTypes</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(ExpressionType::EXPRESSION, ExpressionType::SUBQUERY,
+                                            ExpressionType::BRACKET_EXPRESSION, ExpressionType::TABLE_EXPRESSION,
+                                            ExpressionType::RECORD, ExpressionType::IN_LIST,
+                                            ExpressionType::MATCH_ARGUMENTS, ExpressionType::TABLE,
+                                            ExpressionType::TEMPORARY_TABLE, ExpressionType::COLUMN_TYPE,
+                                            ExpressionType::COLDEF, ExpressionType::PRIMARY_KEY,
+                                            ExpressionType::CONSTRAINT, ExpressionType::COLUMN_LIST,
+                                            ExpressionType::CHECK, ExpressionType::COLLATE, ExpressionType::LIKE,
+                                            ExpressionType::INDEX, ExpressionType::INDEX_TYPE,
+                                            ExpressionType::INDEX_SIZE, ExpressionType::INDEX_PARSER,
+                                            ExpressionType::FOREIGN_KEY, ExpressionType::REFERENCE,
+                                            ExpressionType::PARTITION, ExpressionType::PARTITION_HASH,
+                                            ExpressionType::PARTITION_COUNT, ExpressionType::PARTITION_KEY,
+                                            ExpressionType::PARTITION_KEY_ALGORITHM,
+                                            ExpressionType::PARTITION_RANGE, ExpressionType::PARTITION_LIST,
+                                            ExpressionType::PARTITION_DEF, ExpressionType::PARTITION_VALUES,
+                                            ExpressionType::SUBPARTITION_DEF, ExpressionType::PARTITION_DATA_DIR,
+                                            ExpressionType::PARTITION_INDEX_DIR, ExpressionType::PARTITION_COMMENT,
+                                            ExpressionType::PARTITION_MAX_ROWS, ExpressionType::PARTITION_MIN_ROWS,
+                                            ExpressionType::SUBPARTITION_COMMENT,
+                                            ExpressionType::SUBPARTITION_DATA_DIR,
+                                            ExpressionType::SUBPARTITION_INDEX_DIR,
+                                            ExpressionType::SUBPARTITION_KEY,
+                                            ExpressionType::SUBPARTITION_KEY_ALGORITHM,
+                                            ExpressionType::SUBPARTITION_MAX_ROWS,
+                                            ExpressionType::SUBPARTITION_MIN_ROWS, ExpressionType::SUBPARTITION,
+                                            ExpressionType::SUBPARTITION_HASH, ExpressionType::SUBPARTITION_COUNT,
+                                            ExpressionType::CHARSET, ExpressionType::ENGINE, ExpressionType::QUERY,
+                                            ExpressionType::INDEX_ALGORITHM, ExpressionType::INDEX_LOCK,
+											ExpressionType::SUBQUERY_FACTORING, ExpressionType::CUSTOM_FUNCTION
+)</code></td>
+		<td class="description"><div>
+			<a href="#$backtrackingTypes" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

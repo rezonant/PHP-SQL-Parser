@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class PHPSQLParser\lexer\LexerSplitter</title>
+
+	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
+	<script type="text/javascript" src="elementlist.js?308444134"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="namespace-PHPSQLParser.html">PHPSQLParser<span></span></a>
+						<ul>
+				<li><a href="namespace-PHPSQLParser.builders.html">builders</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.exceptions.html">exceptions</a>
+						</li>
+				<li class="active"><a href="namespace-PHPSQLParser.lexer.html">lexer</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.positions.html">positions</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.processors.html">processors</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.utils.html">utils</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-PHPSQLParser.lexer.LexerSplitter.html">LexerSplitter</a></li>
+				<li><a href="class-PHPSQLParser.lexer.PHPSQLLexer.html">PHPSQLLexer</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-PHPSQLParser.lexer.html" title="Summary of PHPSQLParser\lexer"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class LexerSplitter</h1>
+
+
+	<div class="description">
+	
+<p>This class holds a sorted array of characters, which are used as stop token.
+On every part of the array the given SQL string will be split into single
+tokens. The array must be sorted by element size, longest first (3 chars -&gt; 2
+chars -&gt; 1 char).</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-PHPSQLParser.html">PHPSQLParser</a>\<a href="namespace-PHPSQLParser.lexer.html">lexer</a><br>
+		
+
+				<b>License:</b>
+				<a href="http://www.debian.org/misc/bsd.license">BSD License (3 Clause)</a><br>
+				<b>Author:</b>
+				André Rothe &lt;<a
+href="mailto:andre.rothe&#64;phosco.info">andre.rothe&#64;<!-- -->phosco.info</a>&gt;<br>
+		<b>Located at</b> <a href="source-class-PHPSQLParser.lexer.LexerSplitter.html#45-95" title="Go to source code">PHPSQLParser/lexer/LexerSplitter.php</a><br>
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-PHPSQLParser.lexer.LexerSplitter.html#62-70" title="Go to source code">__construct</a>( )</code>
+
+		<div class="description short">
+			
+<p>Constructor.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Constructor.</p>
+
+<p>It initializes some fields.</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMaxLengthOfSplitter" id="_getMaxLengthOfSplitter">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMaxLengthOfSplitter">#</a>
+		<code><a href="source-class-PHPSQLParser.lexer.LexerSplitter.html#72-82" title="Go to source code">getMaxLengthOfSplitter</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the maximum length of a split token.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the maximum length of a split token.</p>
+
+<p>The largest element must be on position 0 of the internal $_splitters array,
+so the function returns the length of that token. It must be &gt; 0.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>The number of characters for the largest split token.<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isSplitter" id="_isSplitter">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isSplitter">#</a>
+		<code><a href="source-class-PHPSQLParser.lexer.LexerSplitter.html#84-94" title="Go to source code">isSplitter</a>( <span>String <var>$token</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Looks into the internal split token array and compares the given token with
+the array content. It returns true, if the token will be found, false
+otherwise.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Looks into the internal split token array and compares the given token with
+the array content. It returns true, if the token will be found, false
+otherwise.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$token</var></dt>
+					<dd><code>String</code><br>$token a string, which could be a split token.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>true, if the given string will be a split token, false otherwise<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="splitters" id="$splitters">
+		<td class="attributes"><code>
+			protected static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPSQLParser.lexer.LexerSplitter.html#56-58" title="Go to source code"><var>$splitters</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(<span class="php-quote">&quot;&lt;=&gt;&quot;</span>, <span class="php-quote">&quot;\r\n&quot;</span>, <span class="php-quote">&quot;!=&quot;</span>, <span class="php-quote">&quot;&gt;=&quot;</span>, <span class="php-quote">&quot;&lt;=&quot;</span>, <span class="php-quote">&quot;&lt;&gt;&quot;</span>, <span class="php-quote">&quot;&lt;&lt;&quot;</span>, <span class="php-quote">&quot;&gt;&gt;&quot;</span>, <span class="php-quote">&quot;:=&quot;</span>, <span class="php-quote">&quot;\\&quot;</span>, <span class="php-quote">&quot;&amp;&amp;&quot;</span>, <span class="php-quote">&quot;||&quot;</span>, <span class="php-quote">&quot;:=&quot;</span>,
+                                   <span class="php-quote">&quot;/*&quot;</span>, <span class="php-quote">&quot;*/&quot;</span>, <span class="php-quote">&quot;--&quot;</span>, <span class="php-quote">&quot;&gt;&quot;</span>, <span class="php-quote">&quot;&lt;&quot;</span>, <span class="php-quote">&quot;|&quot;</span>, <span class="php-quote">&quot;=&quot;</span>, <span class="php-quote">&quot;^&quot;</span>, <span class="php-quote">&quot;(&quot;</span>, <span class="php-quote">&quot;)&quot;</span>, <span class="php-quote">&quot;\t&quot;</span>, <span class="php-quote">&quot;\n&quot;</span>, <span class="php-quote">&quot;'&quot;</span>, <span class="php-quote">&quot;\&quot;&quot;</span>, <span class="php-quote">&quot;`&quot;</span>,
+                                   <span class="php-quote">&quot;,&quot;</span>, <span class="php-quote">&quot;@&quot;</span>, <span class="php-quote">&quot; &quot;</span>, <span class="php-quote">&quot;+&quot;</span>, <span class="php-quote">&quot;-&quot;</span>, <span class="php-quote">&quot;*&quot;</span>, <span class="php-quote">&quot;/&quot;</span>, <span class="php-quote">&quot;;&quot;</span>)</code></td>
+		<td class="description"><div>
+			<a href="#$splitters" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="tokenSize" id="$tokenSize">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPSQLParser.lexer.LexerSplitter.html#59" title="Go to source code"><var>$tokenSize</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$tokenSize" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="hashSet" id="$hashSet">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPSQLParser.lexer.LexerSplitter.html#60" title="Go to source code"><var>$hashSet</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$hashSet" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

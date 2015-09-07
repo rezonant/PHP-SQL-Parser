@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class PHPSQLParser\PHPSQLParser</title>
+
+	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
+	<script type="text/javascript" src="elementlist.js?308444134"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="namespace-PHPSQLParser.html">PHPSQLParser<span></span></a>
+						<ul>
+				<li><a href="namespace-PHPSQLParser.builders.html">builders</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.exceptions.html">exceptions</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.lexer.html">lexer</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.positions.html">positions</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.processors.html">processors</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.utils.html">utils</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-PHPSQLParser.PHPSQLCreator.html">PHPSQLCreator</a></li>
+				<li class="active"><a href="class-PHPSQLParser.PHPSQLParser.html">PHPSQLParser</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-PHPSQLParser.html" title="Summary of PHPSQLParser"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class PHPSQLParser</h1>
+
+
+	<div class="description">
+	
+<p>This class implements the parser functionality.</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-PHPSQLParser.html">PHPSQLParser</a><br>
+		
+
+				<b>License:</b>
+				<a href="http://www.debian.org/misc/bsd.license">BSD License (3 Clause)</a><br>
+				<b>Author:</b>
+				Justin Swanhart &lt;<a
+href="mailto:greenlion&#64;gmail.com">greenlion&#64;<!-- -->gmail.com</a>&gt;<br>
+				<b>Author:</b>
+				André Rothe &lt;<a
+href="mailto:arothe&#64;phosco.info">arothe&#64;<!-- -->phosco.info</a>&gt;<br>
+		<b>Located at</b> <a href="source-class-PHPSQLParser.PHPSQLParser.html#47-130" title="Go to source code">PHPSQLParser/PHPSQLParser.php</a><br>
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-PHPSQLParser.PHPSQLParser.html#58-69" title="Go to source code">__construct</a>( <span>String <var>$sql</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$calcPositions</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Constructor. It simply calls the parse() function. Use the public variable
+$parsed to get the output.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Constructor. It simply calls the parse() function. Use the public variable
+$parsed to get the output.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd><code>String</code><br>$sql The SQL statement.</dd>
+					<dt><var>$calcPositions</var></dt>
+					<dd><code>boolean</code><br>$calcPositions True, if the output should contain [position], false otherwise.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parse" id="_parse">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parse">#</a>
+		<code><a href="source-class-PHPSQLParser.PHPSQLParser.html#71-98" title="Go to source code">parse</a>( <span>String <var>$sql</var></span>, <span>boolean <var>$calcPositions</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>It parses the given SQL statement and generates a detailled output array for
+every part of the statement. The method can also generate [position] fields
+within the output, which hold the character position for every statement part.
+The calculation of the positions needs some time, if you don't need positions in
+your application, set the parameter to false.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>It parses the given SQL statement and generates a detailled output array for
+every part of the statement. The method can also generate [position] fields
+within the output, which hold the character position for every statement part.
+The calculation of the positions needs some time, if you don't need positions in
+your application, set the parameter to false.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd><code>String</code><br>$sql The SQL statement.</dd>
+					<dt><var>$calcPositions</var></dt>
+					<dd><code>boolean</code><br>$calcPositions True, if the output should contain [position], false otherwise.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>An associative array with all meta information about the SQL statement.<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addCustomFunction" id="_addCustomFunction">
+
+		<td class="attributes"><code>
+			 public 
+			null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addCustomFunction">#</a>
+		<code><a href="source-class-PHPSQLParser.PHPSQLParser.html#100-109" title="Go to source code">addCustomFunction</a>( <span>String <var>$token</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a custom function to the parser. no return value</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a custom function to the parser. no return value</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$token</var></dt>
+					<dd><code>String</code><br>$token The name of the function to add</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>null</code><br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeCustomFunction" id="_removeCustomFunction">
+
+		<td class="attributes"><code>
+			 public 
+			null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeCustomFunction">#</a>
+		<code><a href="source-class-PHPSQLParser.PHPSQLParser.html#111-120" title="Go to source code">removeCustomFunction</a>( <span>String <var>$token</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Remove a custom function from the parser. no return value</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Remove a custom function from the parser. no return value</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$token</var></dt>
+					<dd><code>String</code><br>$token The name of the function to remove</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>null</code><br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCustomFunctions" id="_getCustomFunctions">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCustomFunctions">#</a>
+		<code><a href="source-class-PHPSQLParser.PHPSQLParser.html#122-129" title="Go to source code">getCustomFunctions</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the list of custom functions</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the list of custom functions</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>Returns an array of all custom functions<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="parsed" id="$parsed">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPSQLParser.PHPSQLParser.html#56" title="Go to source code"><var>$parsed</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$parsed" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

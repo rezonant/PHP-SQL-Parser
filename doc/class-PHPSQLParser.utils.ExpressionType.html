@@ -1,0 +1,1818 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class PHPSQLParser\utils\ExpressionType</title>
+
+	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
+	<script type="text/javascript" src="elementlist.js?308444134"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="namespace-PHPSQLParser.html">PHPSQLParser<span></span></a>
+						<ul>
+				<li><a href="namespace-PHPSQLParser.builders.html">builders</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.exceptions.html">exceptions</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.lexer.html">lexer</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.positions.html">positions</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.processors.html">processors</a>
+						</li>
+				<li class="active"><a href="namespace-PHPSQLParser.utils.html">utils</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-PHPSQLParser.utils.ExpressionToken.html">ExpressionToken</a></li>
+				<li class="active"><a href="class-PHPSQLParser.utils.ExpressionType.html">ExpressionType</a></li>
+				<li><a href="class-PHPSQLParser.utils.PHPSQLParserConstants.html">PHPSQLParserConstants</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-PHPSQLParser.utils.html" title="Summary of PHPSQLParser\utils"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ExpressionType</h1>
+
+
+	<div class="description">
+	
+<p>This class defines all values, which are possible for the [expr_type] field
+within the parser output.</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-PHPSQLParser.html">PHPSQLParser</a>\<a href="namespace-PHPSQLParser.utils.html">utils</a><br>
+		
+
+				<b>License:</b>
+				<a href="http://www.debian.org/misc/bsd.license">BSD License (3 Clause)</a><br>
+				<b>Author:</b>
+				André Rothe &lt;<a
+href="mailto:andre.rothe&#64;phosco.info">andre.rothe&#64;<!-- -->phosco.info</a>&gt;<br>
+		<b>Located at</b> <a href="source-class-PHPSQLParser.utils.ExpressionType.html#45-152" title="Go to source code">PHPSQLParser/utils/ExpressionType.php</a><br>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="USER_VARIABLE" id="USER_VARIABLE">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#55" title="Go to source code"><b>USER_VARIABLE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'user_variable'</span></code></td>
+		<td class="description"><div>
+			<a href="#USER_VARIABLE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="SESSION_VARIABLE" id="SESSION_VARIABLE">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#56" title="Go to source code"><b>SESSION_VARIABLE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'session_variable'</span></code></td>
+		<td class="description"><div>
+			<a href="#SESSION_VARIABLE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="GLOBAL_VARIABLE" id="GLOBAL_VARIABLE">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#57" title="Go to source code"><b>GLOBAL_VARIABLE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'global_variable'</span></code></td>
+		<td class="description"><div>
+			<a href="#GLOBAL_VARIABLE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="LOCAL_VARIABLE" id="LOCAL_VARIABLE">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#58" title="Go to source code"><b>LOCAL_VARIABLE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'local_variable'</span></code></td>
+		<td class="description"><div>
+			<a href="#LOCAL_VARIABLE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="COLDEF" id="COLDEF">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#60" title="Go to source code"><b>COLDEF</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'column-def'</span></code></td>
+		<td class="description"><div>
+			<a href="#COLDEF" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="COLREF" id="COLREF">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#61" title="Go to source code"><b>COLREF</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'colref'</span></code></td>
+		<td class="description"><div>
+			<a href="#COLREF" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="RESERVED" id="RESERVED">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#62" title="Go to source code"><b>RESERVED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'reserved'</span></code></td>
+		<td class="description"><div>
+			<a href="#RESERVED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CONSTANT" id="CONSTANT">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#63" title="Go to source code"><b>CONSTANT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'const'</span></code></td>
+		<td class="description"><div>
+			<a href="#CONSTANT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="AGGREGATE_FUNCTION" id="AGGREGATE_FUNCTION">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#65" title="Go to source code"><b>AGGREGATE_FUNCTION</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'aggregate_function'</span></code></td>
+		<td class="description"><div>
+			<a href="#AGGREGATE_FUNCTION" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CUSTOM_FUNCTION" id="CUSTOM_FUNCTION">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#66" title="Go to source code"><b>CUSTOM_FUNCTION</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'custom_function'</span></code></td>
+		<td class="description"><div>
+			<a href="#CUSTOM_FUNCTION" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="SIMPLE_FUNCTION" id="SIMPLE_FUNCTION">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#68" title="Go to source code"><b>SIMPLE_FUNCTION</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'function'</span></code></td>
+		<td class="description"><div>
+			<a href="#SIMPLE_FUNCTION" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="EXPRESSION" id="EXPRESSION">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#70" title="Go to source code"><b>EXPRESSION</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'expression'</span></code></td>
+		<td class="description"><div>
+			<a href="#EXPRESSION" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="BRACKET_EXPRESSION" id="BRACKET_EXPRESSION">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#71" title="Go to source code"><b>BRACKET_EXPRESSION</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'bracket_expression'</span></code></td>
+		<td class="description"><div>
+			<a href="#BRACKET_EXPRESSION" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="TABLE_EXPRESSION" id="TABLE_EXPRESSION">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#72" title="Go to source code"><b>TABLE_EXPRESSION</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'table_expression'</span></code></td>
+		<td class="description"><div>
+			<a href="#TABLE_EXPRESSION" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="SUBQUERY" id="SUBQUERY">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#74" title="Go to source code"><b>SUBQUERY</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'subquery'</span></code></td>
+		<td class="description"><div>
+			<a href="#SUBQUERY" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="IN_LIST" id="IN_LIST">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#75" title="Go to source code"><b>IN_LIST</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'in-list'</span></code></td>
+		<td class="description"><div>
+			<a href="#IN_LIST" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="OPERATOR" id="OPERATOR">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#76" title="Go to source code"><b>OPERATOR</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'operator'</span></code></td>
+		<td class="description"><div>
+			<a href="#OPERATOR" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="SIGN" id="SIGN">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#77" title="Go to source code"><b>SIGN</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'sign'</span></code></td>
+		<td class="description"><div>
+			<a href="#SIGN" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="RECORD" id="RECORD">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#78" title="Go to source code"><b>RECORD</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'record'</span></code></td>
+		<td class="description"><div>
+			<a href="#RECORD" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="MATCH_ARGUMENTS" id="MATCH_ARGUMENTS">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#80" title="Go to source code"><b>MATCH_ARGUMENTS</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'match-arguments'</span></code></td>
+		<td class="description"><div>
+			<a href="#MATCH_ARGUMENTS" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="MATCH_MODE" id="MATCH_MODE">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#81" title="Go to source code"><b>MATCH_MODE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'match-mode'</span></code></td>
+		<td class="description"><div>
+			<a href="#MATCH_MODE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="ALIAS" id="ALIAS">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#83" title="Go to source code"><b>ALIAS</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'alias'</span></code></td>
+		<td class="description"><div>
+			<a href="#ALIAS" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="POSITION" id="POSITION">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#84" title="Go to source code"><b>POSITION</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'pos'</span></code></td>
+		<td class="description"><div>
+			<a href="#POSITION" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="TEMPORARY_TABLE" id="TEMPORARY_TABLE">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#86" title="Go to source code"><b>TEMPORARY_TABLE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'temporary-table'</span></code></td>
+		<td class="description"><div>
+			<a href="#TEMPORARY_TABLE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="TABLE" id="TABLE">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#87" title="Go to source code"><b>TABLE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'table'</span></code></td>
+		<td class="description"><div>
+			<a href="#TABLE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="VIEW" id="VIEW">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#88" title="Go to source code"><b>VIEW</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'view'</span></code></td>
+		<td class="description"><div>
+			<a href="#VIEW" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="DATABASE" id="DATABASE">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#89" title="Go to source code"><b>DATABASE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'database'</span></code></td>
+		<td class="description"><div>
+			<a href="#DATABASE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="SCHEMA" id="SCHEMA">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#90" title="Go to source code"><b>SCHEMA</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'schema'</span></code></td>
+		<td class="description"><div>
+			<a href="#SCHEMA" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="PROCEDURE" id="PROCEDURE">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#92" title="Go to source code"><b>PROCEDURE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'procedure'</span></code></td>
+		<td class="description"><div>
+			<a href="#PROCEDURE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="ENGINE" id="ENGINE">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#93" title="Go to source code"><b>ENGINE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'engine'</span></code></td>
+		<td class="description"><div>
+			<a href="#ENGINE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="USER" id="USER">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#94" title="Go to source code"><b>USER</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'user'</span></code></td>
+		<td class="description"><div>
+			<a href="#USER" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="DIRECTORY" id="DIRECTORY">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#95" title="Go to source code"><b>DIRECTORY</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'directory'</span></code></td>
+		<td class="description"><div>
+			<a href="#DIRECTORY" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="UNION" id="UNION">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#96" title="Go to source code"><b>UNION</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'union'</span></code></td>
+		<td class="description"><div>
+			<a href="#UNION" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CHARSET" id="CHARSET">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#97" title="Go to source code"><b>CHARSET</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'character-set'</span></code></td>
+		<td class="description"><div>
+			<a href="#CHARSET" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="COLLATE" id="COLLATE">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#98" title="Go to source code"><b>COLLATE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'collation'</span></code></td>
+		<td class="description"><div>
+			<a href="#COLLATE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="LIKE" id="LIKE">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#100" title="Go to source code"><b>LIKE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'like'</span></code></td>
+		<td class="description"><div>
+			<a href="#LIKE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CONSTRAINT" id="CONSTRAINT">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#101" title="Go to source code"><b>CONSTRAINT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'constraint'</span></code></td>
+		<td class="description"><div>
+			<a href="#CONSTRAINT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="PRIMARY_KEY" id="PRIMARY_KEY">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#102" title="Go to source code"><b>PRIMARY_KEY</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'primary-key'</span></code></td>
+		<td class="description"><div>
+			<a href="#PRIMARY_KEY" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="FOREIGN_KEY" id="FOREIGN_KEY">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#103" title="Go to source code"><b>FOREIGN_KEY</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'foreign-key'</span></code></td>
+		<td class="description"><div>
+			<a href="#FOREIGN_KEY" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="UNIQUE_IDX" id="UNIQUE_IDX">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#104" title="Go to source code"><b>UNIQUE_IDX</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'unique-index'</span></code></td>
+		<td class="description"><div>
+			<a href="#UNIQUE_IDX" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="INDEX" id="INDEX">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#105" title="Go to source code"><b>INDEX</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'index'</span></code></td>
+		<td class="description"><div>
+			<a href="#INDEX" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="FULLTEXT_IDX" id="FULLTEXT_IDX">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#106" title="Go to source code"><b>FULLTEXT_IDX</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'fulltext-index'</span></code></td>
+		<td class="description"><div>
+			<a href="#FULLTEXT_IDX" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="SPATIAL_IDX" id="SPATIAL_IDX">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#107" title="Go to source code"><b>SPATIAL_IDX</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'spatial-index'</span></code></td>
+		<td class="description"><div>
+			<a href="#SPATIAL_IDX" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="INDEX_TYPE" id="INDEX_TYPE">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#108" title="Go to source code"><b>INDEX_TYPE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'index-type'</span></code></td>
+		<td class="description"><div>
+			<a href="#INDEX_TYPE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CHECK" id="CHECK">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#109" title="Go to source code"><b>CHECK</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'check'</span></code></td>
+		<td class="description"><div>
+			<a href="#CHECK" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="COLUMN_LIST" id="COLUMN_LIST">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#110" title="Go to source code"><b>COLUMN_LIST</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'column-list'</span></code></td>
+		<td class="description"><div>
+			<a href="#COLUMN_LIST" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="INDEX_COLUMN" id="INDEX_COLUMN">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#111" title="Go to source code"><b>INDEX_COLUMN</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'index-column'</span></code></td>
+		<td class="description"><div>
+			<a href="#INDEX_COLUMN" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="INDEX_SIZE" id="INDEX_SIZE">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#112" title="Go to source code"><b>INDEX_SIZE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'index-size'</span></code></td>
+		<td class="description"><div>
+			<a href="#INDEX_SIZE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="INDEX_PARSER" id="INDEX_PARSER">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#113" title="Go to source code"><b>INDEX_PARSER</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'index-parser'</span></code></td>
+		<td class="description"><div>
+			<a href="#INDEX_PARSER" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="INDEX_ALGORITHM" id="INDEX_ALGORITHM">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#114" title="Go to source code"><b>INDEX_ALGORITHM</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'index-algorithm'</span></code></td>
+		<td class="description"><div>
+			<a href="#INDEX_ALGORITHM" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="INDEX_LOCK" id="INDEX_LOCK">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#115" title="Go to source code"><b>INDEX_LOCK</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'index-lock'</span></code></td>
+		<td class="description"><div>
+			<a href="#INDEX_LOCK" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="REFERENCE" id="REFERENCE">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#116" title="Go to source code"><b>REFERENCE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'foreign-ref'</span></code></td>
+		<td class="description"><div>
+			<a href="#REFERENCE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="DATA_TYPE" id="DATA_TYPE">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#118" title="Go to source code"><b>DATA_TYPE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'data-type'</span></code></td>
+		<td class="description"><div>
+			<a href="#DATA_TYPE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="COLUMN_TYPE" id="COLUMN_TYPE">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#119" title="Go to source code"><b>COLUMN_TYPE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'column-type'</span></code></td>
+		<td class="description"><div>
+			<a href="#COLUMN_TYPE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="DEF_VALUE" id="DEF_VALUE">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#120" title="Go to source code"><b>DEF_VALUE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'default-value'</span></code></td>
+		<td class="description"><div>
+			<a href="#DEF_VALUE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="COMMENT" id="COMMENT">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#121" title="Go to source code"><b>COMMENT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'comment'</span></code></td>
+		<td class="description"><div>
+			<a href="#COMMENT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="PARTITION" id="PARTITION">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#123" title="Go to source code"><b>PARTITION</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'partition'</span></code></td>
+		<td class="description"><div>
+			<a href="#PARTITION" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="PARTITION_LIST" id="PARTITION_LIST">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#124" title="Go to source code"><b>PARTITION_LIST</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'partition-list'</span></code></td>
+		<td class="description"><div>
+			<a href="#PARTITION_LIST" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="PARTITION_RANGE" id="PARTITION_RANGE">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#125" title="Go to source code"><b>PARTITION_RANGE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'partition-range'</span></code></td>
+		<td class="description"><div>
+			<a href="#PARTITION_RANGE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="PARTITION_HASH" id="PARTITION_HASH">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#126" title="Go to source code"><b>PARTITION_HASH</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'partition-hash'</span></code></td>
+		<td class="description"><div>
+			<a href="#PARTITION_HASH" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="PARTITION_KEY" id="PARTITION_KEY">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#127" title="Go to source code"><b>PARTITION_KEY</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'partition-key'</span></code></td>
+		<td class="description"><div>
+			<a href="#PARTITION_KEY" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="PARTITION_COUNT" id="PARTITION_COUNT">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#128" title="Go to source code"><b>PARTITION_COUNT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'partition-count'</span></code></td>
+		<td class="description"><div>
+			<a href="#PARTITION_COUNT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="PARTITION_DEF" id="PARTITION_DEF">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#129" title="Go to source code"><b>PARTITION_DEF</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'partition-def'</span></code></td>
+		<td class="description"><div>
+			<a href="#PARTITION_DEF" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="PARTITION_VALUES" id="PARTITION_VALUES">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#130" title="Go to source code"><b>PARTITION_VALUES</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'partition-values'</span></code></td>
+		<td class="description"><div>
+			<a href="#PARTITION_VALUES" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="PARTITION_COMMENT" id="PARTITION_COMMENT">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#131" title="Go to source code"><b>PARTITION_COMMENT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'partition-comment'</span></code></td>
+		<td class="description"><div>
+			<a href="#PARTITION_COMMENT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="PARTITION_INDEX_DIR" id="PARTITION_INDEX_DIR">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#132" title="Go to source code"><b>PARTITION_INDEX_DIR</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'partition-index-dir'</span></code></td>
+		<td class="description"><div>
+			<a href="#PARTITION_INDEX_DIR" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="PARTITION_DATA_DIR" id="PARTITION_DATA_DIR">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#133" title="Go to source code"><b>PARTITION_DATA_DIR</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'partition-data-dir'</span></code></td>
+		<td class="description"><div>
+			<a href="#PARTITION_DATA_DIR" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="PARTITION_MAX_ROWS" id="PARTITION_MAX_ROWS">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#134" title="Go to source code"><b>PARTITION_MAX_ROWS</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'partition-max-rows'</span></code></td>
+		<td class="description"><div>
+			<a href="#PARTITION_MAX_ROWS" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="PARTITION_MIN_ROWS" id="PARTITION_MIN_ROWS">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#135" title="Go to source code"><b>PARTITION_MIN_ROWS</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'partition-min-rows'</span></code></td>
+		<td class="description"><div>
+			<a href="#PARTITION_MIN_ROWS" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="PARTITION_KEY_ALGORITHM" id="PARTITION_KEY_ALGORITHM">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#136" title="Go to source code"><b>PARTITION_KEY_ALGORITHM</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'partition-key-algorithm'</span></code></td>
+		<td class="description"><div>
+			<a href="#PARTITION_KEY_ALGORITHM" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="SUBPARTITION" id="SUBPARTITION">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#138" title="Go to source code"><b>SUBPARTITION</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'sub-partition'</span></code></td>
+		<td class="description"><div>
+			<a href="#SUBPARTITION" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="SUBPARTITION_DEF" id="SUBPARTITION_DEF">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#139" title="Go to source code"><b>SUBPARTITION_DEF</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'sub-partition-def'</span></code></td>
+		<td class="description"><div>
+			<a href="#SUBPARTITION_DEF" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="SUBPARTITION_HASH" id="SUBPARTITION_HASH">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#140" title="Go to source code"><b>SUBPARTITION_HASH</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'sub-partition-hash'</span></code></td>
+		<td class="description"><div>
+			<a href="#SUBPARTITION_HASH" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="SUBPARTITION_KEY" id="SUBPARTITION_KEY">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#141" title="Go to source code"><b>SUBPARTITION_KEY</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'sub-partition-key'</span></code></td>
+		<td class="description"><div>
+			<a href="#SUBPARTITION_KEY" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="SUBPARTITION_COUNT" id="SUBPARTITION_COUNT">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#142" title="Go to source code"><b>SUBPARTITION_COUNT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'sub-partition-count'</span></code></td>
+		<td class="description"><div>
+			<a href="#SUBPARTITION_COUNT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="SUBPARTITION_COMMENT" id="SUBPARTITION_COMMENT">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#143" title="Go to source code"><b>SUBPARTITION_COMMENT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'sub-partition-comment'</span></code></td>
+		<td class="description"><div>
+			<a href="#SUBPARTITION_COMMENT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="SUBPARTITION_INDEX_DIR" id="SUBPARTITION_INDEX_DIR">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#144" title="Go to source code"><b>SUBPARTITION_INDEX_DIR</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'sub-partition-index-dir'</span></code></td>
+		<td class="description"><div>
+			<a href="#SUBPARTITION_INDEX_DIR" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="SUBPARTITION_DATA_DIR" id="SUBPARTITION_DATA_DIR">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#145" title="Go to source code"><b>SUBPARTITION_DATA_DIR</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'sub-partition-data-dir'</span></code></td>
+		<td class="description"><div>
+			<a href="#SUBPARTITION_DATA_DIR" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="SUBPARTITION_MAX_ROWS" id="SUBPARTITION_MAX_ROWS">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#146" title="Go to source code"><b>SUBPARTITION_MAX_ROWS</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'sub-partition-max-rows'</span></code></td>
+		<td class="description"><div>
+			<a href="#SUBPARTITION_MAX_ROWS" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="SUBPARTITION_MIN_ROWS" id="SUBPARTITION_MIN_ROWS">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#147" title="Go to source code"><b>SUBPARTITION_MIN_ROWS</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'sub-partition-min-rows'</span></code></td>
+		<td class="description"><div>
+			<a href="#SUBPARTITION_MIN_ROWS" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="SUBPARTITION_KEY_ALGORITHM" id="SUBPARTITION_KEY_ALGORITHM">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#148" title="Go to source code"><b>SUBPARTITION_KEY_ALGORITHM</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'sub-partition-key-algorithm'</span></code></td>
+		<td class="description"><div>
+			<a href="#SUBPARTITION_KEY_ALGORITHM" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="QUERY" id="QUERY">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#150" title="Go to source code"><b>QUERY</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'query'</span></code></td>
+		<td class="description"><div>
+			<a href="#QUERY" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="SUBQUERY_FACTORING" id="SUBQUERY_FACTORING">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-PHPSQLParser.utils.ExpressionType.html#151" title="Go to source code"><b>SUBQUERY_FACTORING</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'subquery-factoring'</span></code></td>
+		<td class="description"><div>
+			<a href="#SUBQUERY_FACTORING" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

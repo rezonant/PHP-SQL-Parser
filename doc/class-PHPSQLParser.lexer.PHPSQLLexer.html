@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class PHPSQLParser\lexer\PHPSQLLexer</title>
+
+	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
+	<script type="text/javascript" src="elementlist.js?308444134"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="namespace-PHPSQLParser.html">PHPSQLParser<span></span></a>
+						<ul>
+				<li><a href="namespace-PHPSQLParser.builders.html">builders</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.exceptions.html">exceptions</a>
+						</li>
+				<li class="active"><a href="namespace-PHPSQLParser.lexer.html">lexer</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.positions.html">positions</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.processors.html">processors</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.utils.html">utils</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-PHPSQLParser.lexer.LexerSplitter.html">LexerSplitter</a></li>
+				<li class="active"><a href="class-PHPSQLParser.lexer.PHPSQLLexer.html">PHPSQLLexer</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-PHPSQLParser.lexer.html" title="Summary of PHPSQLParser\lexer"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class PHPSQLLexer</h1>
+
+
+	<div class="description">
+	
+<p>This class splits the SQL string into little parts, which the parser can use
+to build the result array.</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-PHPSQLParser.html">PHPSQLParser</a>\<a href="namespace-PHPSQLParser.lexer.html">lexer</a><br>
+		
+
+				<b>License:</b>
+				<a href="http://www.debian.org/misc/bsd.license">BSD License (3 Clause)</a><br>
+				<b>Author:</b>
+				André Rothe &lt;<a
+href="mailto:andre.rothe&#64;phosco.info">andre.rothe&#64;<!-- -->phosco.info</a>&gt;<br>
+		<b>Located at</b> <a href="source-class-PHPSQLParser.lexer.PHPSQLLexer.html#46-440" title="Go to source code">PHPSQLParser/lexer/PHPSQLLexer.php</a><br>
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-PHPSQLParser.lexer.PHPSQLLexer.html#58-65" title="Go to source code">__construct</a>( )</code>
+
+		<div class="description short">
+			
+<p>Constructor.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Constructor.</p>
+
+<p>It initializes some fields.</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="endsWith" id="_endsWith">
+
+		<td class="attributes"><code>
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_endsWith">#</a>
+		<code><a href="source-class-PHPSQLParser.lexer.PHPSQLLexer.html#67-81" title="Go to source code">endsWith</a>( <span>string <var>$haystack</var></span>, <span>string <var>$needle</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Ends the given string $haystack with the string $needle?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Ends the given string $haystack with the string $needle?</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$haystack</var></dt>
+					<dd><code>string</code><br>$haystack</dd>
+					<dt><var>$needle</var></dt>
+					<dd><code>string</code><br>$needle</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>true, if the parameter $haystack ends with the character sequences $needle,
+false otherwise<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="split" id="_split">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_split">#</a>
+		<code><a href="source-class-PHPSQLParser.lexer.PHPSQLLexer.html#83-131" title="Go to source code">split</a>( <span>mixed <var>$sql</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="concatNegativeNumbers" id="_concatNegativeNumbers">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_concatNegativeNumbers">#</a>
+		<code><a href="source-class-PHPSQLParser.lexer.PHPSQLLexer.html#133-169" title="Go to source code">concatNegativeNumbers</a>( <span>mixed <var>$tokens</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="concatScientificNotations" id="_concatScientificNotations">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_concatScientificNotations">#</a>
+		<code><a href="source-class-PHPSQLParser.lexer.PHPSQLLexer.html#171-209" title="Go to source code">concatScientificNotations</a>( <span>mixed <var>$tokens</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="concatUserDefinedVariables" id="_concatUserDefinedVariables">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_concatUserDefinedVariables">#</a>
+		<code><a href="source-class-PHPSQLParser.lexer.PHPSQLLexer.html#211-241" title="Go to source code">concatUserDefinedVariables</a>( <span>mixed <var>$tokens</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="concatComments" id="_concatComments">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_concatComments">#</a>
+		<code><a href="source-class-PHPSQLParser.lexer.PHPSQLLexer.html#243-284" title="Go to source code">concatComments</a>( <span>mixed <var>$tokens</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isBacktick" id="_isBacktick">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isBacktick">#</a>
+		<code><a href="source-class-PHPSQLParser.lexer.PHPSQLLexer.html#286-288" title="Go to source code">isBacktick</a>( <span>mixed <var>$token</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="balanceBackticks" id="_balanceBackticks">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_balanceBackticks">#</a>
+		<code><a href="source-class-PHPSQLParser.lexer.PHPSQLLexer.html#290-310" title="Go to source code">balanceBackticks</a>( <span>mixed <var>$tokens</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="balanceCharacter" id="_balanceCharacter">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_balanceCharacter">#</a>
+		<code><a href="source-class-PHPSQLParser.lexer.PHPSQLLexer.html#314-336" title="Go to source code">balanceCharacter</a>( <span>mixed <var>$tokens</var></span>, <span>mixed <var>$idx</var></span>, <span>mixed <var>$char</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="concatColReferences" id="_concatColReferences">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_concatColReferences">#</a>
+		<code><a href="source-class-PHPSQLParser.lexer.PHPSQLLexer.html#338-393" title="Go to source code">concatColReferences</a>( <span>mixed <var>$tokens</var></span> )</code>
+
+		<div class="description short">
+			
+<p>This function concats some tokens to a column reference. There are two
+different cases:</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>This function concats some tokens to a column reference. There are two
+different cases:</p>
+
+<ol>
+	<li>If the current token ends with a dot, we will add the next token</li>
+
+	<li>If the next token starts with a dot, we will add it to the previous
+	token</li>
+</ol>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="concatEscapeSequences" id="_concatEscapeSequences">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_concatEscapeSequences">#</a>
+		<code><a href="source-class-PHPSQLParser.lexer.PHPSQLLexer.html#395-410" title="Go to source code">concatEscapeSequences</a>( <span>mixed <var>$tokens</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="balanceParenthesis" id="_balanceParenthesis">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_balanceParenthesis">#</a>
+		<code><a href="source-class-PHPSQLParser.lexer.PHPSQLLexer.html#412-439" title="Go to source code">balanceParenthesis</a>( <span>mixed <var>$tokens</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="splitters" id="$splitters">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPSQLParser.lexer.PHPSQLLexer.html#56" title="Go to source code"><var>$splitters</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$splitters" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

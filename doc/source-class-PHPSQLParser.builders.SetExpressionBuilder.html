@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+	<meta name="robots" content="noindex">
+
+	<title>File PHPSQLParser/builders/SetExpressionBuilder.php</title>
+
+	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
+	<script type="text/javascript" src="elementlist.js?308444134"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="namespace-PHPSQLParser.html">PHPSQLParser<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-PHPSQLParser.builders.html">builders</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.exceptions.html">exceptions</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.lexer.html">lexer</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.positions.html">positions</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.processors.html">processors</a>
+						</li>
+				<li><a href="namespace-PHPSQLParser.utils.html">utils</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-PHPSQLParser.builders.AliasBuilder.html">AliasBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.AliasReferenceBuilder.html">AliasReferenceBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.BracketStatementBuilder.html">BracketStatementBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CharacterSetBuilder.html">CharacterSetBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CheckBuilder.html">CheckBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CollationBuilder.html">CollationBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ColumnDefinitionBuilder.html">ColumnDefinitionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ColumnListBuilder.html">ColumnListBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ColumnReferenceBuilder.html">ColumnReferenceBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ColumnTypeBracketExpressionBuilder.html">ColumnTypeBracketExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ColumnTypeBuilder.html">ColumnTypeBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ConstantBuilder.html">ConstantBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ConstraintBuilder.html">ConstraintBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CreateBuilder.html">CreateBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CreateIndexBuilder.html">CreateIndexBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CreateIndexOptionsBuilder.html">CreateIndexOptionsBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CreateIndexTableBuilder.html">CreateIndexTableBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CreateIndexTypeBuilder.html">CreateIndexTypeBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CreateStatementBuilder.html">CreateStatementBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CreateTableBuilder.html">CreateTableBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CreateTableDefinitionBuilder.html">CreateTableDefinitionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CreateTableOptionsBuilder.html">CreateTableOptionsBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.CreateTableSelectOptionBuilder.html">CreateTableSelectOptionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.DatabaseBuilder.html">DatabaseBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.DataTypeBuilder.html">DataTypeBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.DefaultValueBuilder.html">DefaultValueBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.DeleteBuilder.html">DeleteBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.DeleteStatementBuilder.html">DeleteStatementBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.DirectionBuilder.html">DirectionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.DropExpressionBuilder.html">DropExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.DropStatementBuilder.html">DropStatementBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.EngineBuilder.html">EngineBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ForeignKeyBuilder.html">ForeignKeyBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ForeignRefBuilder.html">ForeignRefBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.FromBuilder.html">FromBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.FunctionBuilder.html">FunctionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.GroupByAliasBuilder.html">GroupByAliasBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.GroupByBuilder.html">GroupByBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.HavingBracketExpressionBuilder.html">HavingBracketExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.HavingBuilder.html">HavingBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.HavingExpressionBuilder.html">HavingExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.IndexAlgorithmBuilder.html">IndexAlgorithmBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.IndexColumnBuilder.html">IndexColumnBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.IndexCommentBuilder.html">IndexCommentBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.IndexHintListBuilder.html">IndexHintListBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.IndexKeyBuilder.html">IndexKeyBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.IndexLockBuilder.html">IndexLockBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.IndexParserBuilder.html">IndexParserBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.IndexSizeBuilder.html">IndexSizeBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.IndexTypeBuilder.html">IndexTypeBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.InListBuilder.html">InListBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.InsertBuilder.html">InsertBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.InsertColumnListBuilder.html">InsertColumnListBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.InsertStatementBuilder.html">InsertStatementBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.JoinBuilder.html">JoinBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.LikeBuilder.html">LikeBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.LikeExpressionBuilder.html">LikeExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.LimitBuilder.html">LimitBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.OperatorBuilder.html">OperatorBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.OrderByAliasBuilder.html">OrderByAliasBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.OrderByBracketExpressionBuilder.html">OrderByBracketExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.OrderByBuilder.html">OrderByBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.OrderByColumnReferenceBuilder.html">OrderByColumnReferenceBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.OrderByExpressionBuilder.html">OrderByExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.OrderByFunctionBuilder.html">OrderByFunctionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.OrderByReservedBuilder.html">OrderByReservedBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.PositionBuilder.html">PositionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.PrimaryKeyBuilder.html">PrimaryKeyBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ProcedureBuilder.html">ProcedureBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.QueryBuilder.html">QueryBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.RecordBuilder.html">RecordBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.RefClauseBuilder.html">RefClauseBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.RefTypeBuilder.html">RefTypeBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.RenameStatementBuilder.html">RenameStatementBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ReservedBuilder.html">ReservedBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.SchemaBuilder.html">SchemaBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.SelectBracketExpressionBuilder.html">SelectBracketExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.SelectBuilder.html">SelectBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.SelectExpressionBuilder.html">SelectExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.SelectStatementBuilder.html">SelectStatementBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.SetBuilder.html">SetBuilder</a></li>
+				<li class="active"><a href="class-PHPSQLParser.builders.SetExpressionBuilder.html">SetExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ShowBuilder.html">ShowBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ShowStatementBuilder.html">ShowStatementBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.SignBuilder.html">SignBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.SubQueryBuilder.html">SubQueryBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.SubTreeBuilder.html">SubTreeBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.TableBracketExpressionBuilder.html">TableBracketExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.TableBuilder.html">TableBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.TableExpressionBuilder.html">TableExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.TempTableBuilder.html">TempTableBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.UpdateBuilder.html">UpdateBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.UpdateStatementBuilder.html">UpdateStatementBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.UserVariableBuilder.html">UserVariableBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ValuesBuilder.html">ValuesBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.ViewBuilder.html">ViewBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.WhereBracketExpressionBuilder.html">WhereBracketExpressionBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.WhereBuilder.html">WhereBuilder</a></li>
+				<li><a href="class-PHPSQLParser.builders.WhereExpressionBuilder.html">WhereExpressionBuilder</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-PHPSQLParser.builders.Builder.html">Builder</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-PHPSQLParser.builders.html" title="Summary of PHPSQLParser\builders"><span>Namespace</span></a>
+			</li>
+			<li>
+				<a href="class-PHPSQLParser.builders.SetExpressionBuilder.html" title="Summary of PHPSQLParser\builders\SetExpressionBuilder"><span>Class</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<pre><code><span id="1" class="l"><a class="l" href="#1">  1: </a><span class="xlang">&lt;?php</span>
+</span><span id="2" class="l"><a class="l" href="#2">  2: </a><span class="php-comment">/**
+</span></span><span id="3" class="l"><a class="l" href="#3">  3: </a><span class="php-comment"> * SetExpressionBuilder.php
+</span></span><span id="4" class="l"><a class="l" href="#4">  4: </a><span class="php-comment"> *
+</span></span><span id="5" class="l"><a class="l" href="#5">  5: </a><span class="php-comment"> * Builds the SET part of the INSERT statement.
+</span></span><span id="6" class="l"><a class="l" href="#6">  6: </a><span class="php-comment"> *
+</span></span><span id="7" class="l"><a class="l" href="#7">  7: </a><span class="php-comment"> * PHP version 5
+</span></span><span id="8" class="l"><a class="l" href="#8">  8: </a><span class="php-comment"> *
+</span></span><span id="9" class="l"><a class="l" href="#9">  9: </a><span class="php-comment"> * LICENSE:
+</span></span><span id="10" class="l"><a class="l" href="#10"> 10: </a><span class="php-comment"> * Copyright (c) 2010-2014 Justin Swanhart and André Rothe
+</span></span><span id="11" class="l"><a class="l" href="#11"> 11: </a><span class="php-comment"> * All rights reserved.
+</span></span><span id="12" class="l"><a class="l" href="#12"> 12: </a><span class="php-comment"> *
+</span></span><span id="13" class="l"><a class="l" href="#13"> 13: </a><span class="php-comment"> * Redistribution and use in source and binary forms, with or without
+</span></span><span id="14" class="l"><a class="l" href="#14"> 14: </a><span class="php-comment"> * modification, are permitted provided that the following conditions
+</span></span><span id="15" class="l"><a class="l" href="#15"> 15: </a><span class="php-comment"> * are met:
+</span></span><span id="16" class="l"><a class="l" href="#16"> 16: </a><span class="php-comment"> * 1. Redistributions of source code must retain the above copyright
+</span></span><span id="17" class="l"><a class="l" href="#17"> 17: </a><span class="php-comment"> *    notice, this list of conditions and the following disclaimer.
+</span></span><span id="18" class="l"><a class="l" href="#18"> 18: </a><span class="php-comment"> * 2. Redistributions in binary form must reproduce the above copyright
+</span></span><span id="19" class="l"><a class="l" href="#19"> 19: </a><span class="php-comment"> *    notice, this list of conditions and the following disclaimer in the
+</span></span><span id="20" class="l"><a class="l" href="#20"> 20: </a><span class="php-comment"> *    documentation and/or other materials provided with the distribution.
+</span></span><span id="21" class="l"><a class="l" href="#21"> 21: </a><span class="php-comment"> * 3. The name of the author may not be used to endorse or promote products
+</span></span><span id="22" class="l"><a class="l" href="#22"> 22: </a><span class="php-comment"> *    derived from this software without specific prior written permission.
+</span></span><span id="23" class="l"><a class="l" href="#23"> 23: </a><span class="php-comment"> *
+</span></span><span id="24" class="l"><a class="l" href="#24"> 24: </a><span class="php-comment"> * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+</span></span><span id="25" class="l"><a class="l" href="#25"> 25: </a><span class="php-comment"> * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+</span></span><span id="26" class="l"><a class="l" href="#26"> 26: </a><span class="php-comment"> * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+</span></span><span id="27" class="l"><a class="l" href="#27"> 27: </a><span class="php-comment"> * IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+</span></span><span id="28" class="l"><a class="l" href="#28"> 28: </a><span class="php-comment"> * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+</span></span><span id="29" class="l"><a class="l" href="#29"> 29: </a><span class="php-comment"> * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+</span></span><span id="30" class="l"><a class="l" href="#30"> 30: </a><span class="php-comment"> * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+</span></span><span id="31" class="l"><a class="l" href="#31"> 31: </a><span class="php-comment"> * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+</span></span><span id="32" class="l"><a class="l" href="#32"> 32: </a><span class="php-comment"> * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+</span></span><span id="33" class="l"><a class="l" href="#33"> 33: </a><span class="php-comment"> * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</span></span><span id="34" class="l"><a class="l" href="#34"> 34: </a><span class="php-comment"> * 
+</span></span><span id="35" class="l"><a class="l" href="#35"> 35: </a><span class="php-comment"> * @author    André Rothe &lt;andre.rothe@phosco.info&gt;
+</span></span><span id="36" class="l"><a class="l" href="#36"> 36: </a><span class="php-comment"> * @copyright 2010-2014 Justin Swanhart and André Rothe
+</span></span><span id="37" class="l"><a class="l" href="#37"> 37: </a><span class="php-comment"> * @license   http://www.debian.org/misc/bsd.license  BSD License (3 Clause)
+</span></span><span id="38" class="l"><a class="l" href="#38"> 38: </a><span class="php-comment"> * @version   SVN: $Id$
+</span></span><span id="39" class="l"><a class="l" href="#39"> 39: </a><span class="php-comment"> * 
+</span></span><span id="40" class="l"><a class="l" href="#40"> 40: </a><span class="php-comment"> */</span>
+</span><span id="41" class="l"><a class="l" href="#41"> 41: </a>
+</span><span id="42" class="l"><a class="l" href="#42"> 42: </a><span class="php-keyword1">namespace</span> PHPSQLParser\builders;
+</span><span id="43" class="l"><a class="l" href="#43"> 43: </a><span class="php-keyword1">use</span> PHPSQLParser\exceptions\UnableToCreateSQLException;
+</span><span id="44" class="l"><a class="l" href="#44"> 44: </a><span class="php-keyword1">use</span> PHPSQLParser\utils\ExpressionType;
+</span><span id="45" class="l"><a class="l" href="#45"> 45: </a>
+</span><span id="46" class="l"><a class="l" href="#46"> 46: </a><span class="php-comment">/**
+</span></span><span id="47" class="l"><a class="l" href="#47"> 47: </a><span class="php-comment"> * This class implements the builder for the SET part of INSERT statement. 
+</span></span><span id="48" class="l"><a class="l" href="#48"> 48: </a><span class="php-comment"> * You can overwrite all functions to achieve another handling.
+</span></span><span id="49" class="l"><a class="l" href="#49"> 49: </a><span class="php-comment"> *
+</span></span><span id="50" class="l"><a class="l" href="#50"> 50: </a><span class="php-comment"> * @author  André Rothe &lt;andre.rothe@phosco.info&gt;
+</span></span><span id="51" class="l"><a class="l" href="#51"> 51: </a><span class="php-comment"> * @license http://www.debian.org/misc/bsd.license  BSD License (3 Clause)
+</span></span><span id="52" class="l"><a class="l" href="#52"> 52: </a><span class="php-comment"> *  
+</span></span><span id="53" class="l"><a class="l" href="#53"> 53: </a><span class="php-comment"> */</span>
+</span><span id="54" class="l"><a class="l" href="#54"> 54: </a><span class="php-keyword1">class</span> <a id="SetExpressionBuilder" href="#SetExpressionBuilder">SetExpressionBuilder</a> <span class="php-keyword1">implements</span> Builder {
+</span><span id="55" class="l"><a class="l" href="#55"> 55: </a>
+</span><span id="56" class="l"><a class="l" href="#56"> 56: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_buildColRef" href="#_buildColRef">buildColRef</a>(<span class="php-var">$parsed</span>) {
+</span><span id="57" class="l"><a class="l" href="#57"> 57: </a>        <span class="php-var">$builder</span> = <span class="php-keyword1">new</span> ColumnReferenceBuilder();
+</span><span id="58" class="l"><a class="l" href="#58"> 58: </a>        <span class="php-keyword1">return</span> <span class="php-var">$builder</span>-&gt;build(<span class="php-var">$parsed</span>);
+</span><span id="59" class="l"><a class="l" href="#59"> 59: </a>    }
+</span><span id="60" class="l"><a class="l" href="#60"> 60: </a>
+</span><span id="61" class="l"><a class="l" href="#61"> 61: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_buildConstant" href="#_buildConstant">buildConstant</a>(<span class="php-var">$parsed</span>) {
+</span><span id="62" class="l"><a class="l" href="#62"> 62: </a>        <span class="php-var">$builder</span> = <span class="php-keyword1">new</span> ConstantBuilder();
+</span><span id="63" class="l"><a class="l" href="#63"> 63: </a>        <span class="php-keyword1">return</span> <span class="php-var">$builder</span>-&gt;build(<span class="php-var">$parsed</span>);
+</span><span id="64" class="l"><a class="l" href="#64"> 64: </a>    }
+</span><span id="65" class="l"><a class="l" href="#65"> 65: </a>    
+</span><span id="66" class="l"><a class="l" href="#66"> 66: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_buildOperator" href="#_buildOperator">buildOperator</a>(<span class="php-var">$parsed</span>) {
+</span><span id="67" class="l"><a class="l" href="#67"> 67: </a>        <span class="php-var">$builder</span> = <span class="php-keyword1">new</span> OperatorBuilder();
+</span><span id="68" class="l"><a class="l" href="#68"> 68: </a>        <span class="php-keyword1">return</span> <span class="php-var">$builder</span>-&gt;build(<span class="php-var">$parsed</span>);
+</span><span id="69" class="l"><a class="l" href="#69"> 69: </a>    }
+</span><span id="70" class="l"><a class="l" href="#70"> 70: </a>    
+</span><span id="71" class="l"><a class="l" href="#71"> 71: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_buildFunction" href="#_buildFunction">buildFunction</a>(<span class="php-var">$parsed</span>) {
+</span><span id="72" class="l"><a class="l" href="#72"> 72: </a>        <span class="php-var">$builder</span> = <span class="php-keyword1">new</span> FunctionBuilder();
+</span><span id="73" class="l"><a class="l" href="#73"> 73: </a>        <span class="php-keyword1">return</span> <span class="php-var">$builder</span>-&gt;build(<span class="php-var">$parsed</span>);
+</span><span id="74" class="l"><a class="l" href="#74"> 74: </a>    }
+</span><span id="75" class="l"><a class="l" href="#75"> 75: </a>    
+</span><span id="76" class="l"><a class="l" href="#76"> 76: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_buildBracketExpression" href="#_buildBracketExpression">buildBracketExpression</a>(<span class="php-var">$parsed</span>) {
+</span><span id="77" class="l"><a class="l" href="#77"> 77: </a>        <span class="php-var">$builder</span> = <span class="php-keyword1">new</span> SelectBracketExpressionBuilder();
+</span><span id="78" class="l"><a class="l" href="#78"> 78: </a>        <span class="php-keyword1">return</span> <span class="php-var">$builder</span>-&gt;build(<span class="php-var">$parsed</span>);
+</span><span id="79" class="l"><a class="l" href="#79"> 79: </a>    }
+</span><span id="80" class="l"><a class="l" href="#80"> 80: </a>    
+</span><span id="81" class="l"><a class="l" href="#81"> 81: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_buildSign" href="#_buildSign">buildSign</a>(<span class="php-var">$parsed</span>) {
+</span><span id="82" class="l"><a class="l" href="#82"> 82: </a>        <span class="php-var">$builder</span> = <span class="php-keyword1">new</span> SignBuilder();
+</span><span id="83" class="l"><a class="l" href="#83"> 83: </a>        <span class="php-keyword1">return</span> <span class="php-var">$builder</span>-&gt;build(<span class="php-var">$parsed</span>);
+</span><span id="84" class="l"><a class="l" href="#84"> 84: </a>    }
+</span><span id="85" class="l"><a class="l" href="#85"> 85: </a>    
+</span><span id="86" class="l"><a class="l" href="#86"> 86: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_build" href="#_build">build</a>(<span class="php-keyword1">array</span> <span class="php-var">$parsed</span>) {
+</span><span id="87" class="l"><a class="l" href="#87"> 87: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$parsed</span>[<span class="php-quote">'expr_type'</span>] !== ExpressionType::EXPRESSION) {
+</span><span id="88" class="l"><a class="l" href="#88"> 88: </a>            <span class="php-keyword1">return</span> <span class="php-quote">''</span>;
+</span><span id="89" class="l"><a class="l" href="#89"> 89: </a>        }
+</span><span id="90" class="l"><a class="l" href="#90"> 90: </a>        <span class="php-var">$sql</span> = <span class="php-quote">''</span>;
+</span><span id="91" class="l"><a class="l" href="#91"> 91: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$parsed</span>[<span class="php-quote">'sub_tree'</span>] <span class="php-keyword1">as</span> <span class="php-var">$k</span> =&gt; <span class="php-var">$v</span>) {
+</span><span id="92" class="l"><a class="l" href="#92"> 92: </a>            <span class="php-var">$delim</span> = <span class="php-quote">' '</span>;
+</span><span id="93" class="l"><a class="l" href="#93"> 93: </a>            <span class="php-var">$len</span> = <span class="php-keyword2">strlen</span>(<span class="php-var">$sql</span>);
+</span><span id="94" class="l"><a class="l" href="#94"> 94: </a>            <span class="php-var">$sql</span> .= <span class="php-var">$this</span>-&gt;buildColRef(<span class="php-var">$v</span>);
+</span><span id="95" class="l"><a class="l" href="#95"> 95: </a>            <span class="php-var">$sql</span> .= <span class="php-var">$this</span>-&gt;buildConstant(<span class="php-var">$v</span>);
+</span><span id="96" class="l"><a class="l" href="#96"> 96: </a>            <span class="php-var">$sql</span> .= <span class="php-var">$this</span>-&gt;buildOperator(<span class="php-var">$v</span>);
+</span><span id="97" class="l"><a class="l" href="#97"> 97: </a>            <span class="php-var">$sql</span> .= <span class="php-var">$this</span>-&gt;buildFunction(<span class="php-var">$v</span>);
+</span><span id="98" class="l"><a class="l" href="#98"> 98: </a>            <span class="php-var">$sql</span> .= <span class="php-var">$this</span>-&gt;buildBracketExpression(<span class="php-var">$v</span>);
+</span><span id="99" class="l"><a class="l" href="#99"> 99: </a>                        
+</span><span id="100" class="l"><a class="l" href="#100">100: </a>            <span class="php-comment">// we don't need whitespace between the sign and </span>
+</span><span id="101" class="l"><a class="l" href="#101">101: </a>            <span class="php-comment">// the following part</span>
+</span><span id="102" class="l"><a class="l" href="#102">102: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;buildSign(<span class="php-var">$v</span>) !== <span class="php-quote">''</span>) {
+</span><span id="103" class="l"><a class="l" href="#103">103: </a>                <span class="php-var">$delim</span> = <span class="php-quote">''</span>;
+</span><span id="104" class="l"><a class="l" href="#104">104: </a>            }
+</span><span id="105" class="l"><a class="l" href="#105">105: </a>            <span class="php-var">$sql</span> .= <span class="php-var">$this</span>-&gt;buildSign(<span class="php-var">$v</span>);
+</span><span id="106" class="l"><a class="l" href="#106">106: </a>            
+</span><span id="107" class="l"><a class="l" href="#107">107: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$len</span> == <span class="php-keyword2">strlen</span>(<span class="php-var">$sql</span>)) {
+</span><span id="108" class="l"><a class="l" href="#108">108: </a>                <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> UnableToCreateSQLException(<span class="php-quote">'SET expression subtree'</span>, <span class="php-var">$k</span>, <span class="php-var">$v</span>, <span class="php-quote">'expr_type'</span>);
+</span><span id="109" class="l"><a class="l" href="#109">109: </a>            }
+</span><span id="110" class="l"><a class="l" href="#110">110: </a>
+</span><span id="111" class="l"><a class="l" href="#111">111: </a>            <span class="php-var">$sql</span> .= <span class="php-var">$delim</span>;
+</span><span id="112" class="l"><a class="l" href="#112">112: </a>        }
+</span><span id="113" class="l"><a class="l" href="#113">113: </a>        <span class="php-var">$sql</span> = <span class="php-keyword2">substr</span>(<span class="php-var">$sql</span>, <span class="php-num">0</span>, -<span class="php-num">1</span>);
+</span><span id="114" class="l"><a class="l" href="#114">114: </a>        <span class="php-keyword1">return</span> <span class="php-var">$sql</span>;
+</span><span id="115" class="l"><a class="l" href="#115">115: </a>    }
+</span><span id="116" class="l"><a class="l" href="#116">116: </a>}
+</span><span id="117" class="l"><a class="l" href="#117">117: </a><span class="xlang">?&gt;</span>
+</span><span id="118" class="l"><a class="l" href="#118">118: </a></span></code></pre>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
