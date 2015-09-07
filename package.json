@@ -1,0 +1,32 @@
+{
+  "name": "php-sql-parser",
+  "version": "1.0.0",
+  "description": "PHP SQL Parser --------------",
+  "main": "Gruntfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-chmod": "git+https://github.com/rezonant/grunt-chmod.git",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-github-pages": "0.0.4",
+    "grunt-shell": "^1.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rezonant/php-sql-parser.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rezonant/php-sql-parser/issues"
+  },
+  "homepage": "https://github.com/rezonant/php-sql-parser#readme"
+}
