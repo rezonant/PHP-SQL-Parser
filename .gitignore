@@ -3,5 +3,7 @@ composer.lock
 clover.xml
 /PHP-SQL-Parser/nbproject/private/
 /nbproject/private/
+/nbproject/
+/node_modules/
 doc/
 _site/
