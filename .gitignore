@@ -1,3 +1,5 @@
 vendor/
 composer.lock
 clover.xml
+/PHP-SQL-Parser/nbproject/private/
+/nbproject/private/
