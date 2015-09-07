@@ -43,6 +43,7 @@ The focus of the parser is complete and accurate support for the MySQL SQL diale
 ###Manual and Documentation
 
 [ParserManual](https://github.com/greenlion/PHP-SQL-Parser/wiki/Parser-Manual) - Check out the manual.
+
 [Documentation](https://rezonant.github.io/PHP-SQL-Parser/doc/) - API documentation
 
 ###Example Output
