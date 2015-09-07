@@ -40,9 +40,10 @@ The parser is a self contained class. It has no external dependencies. The parse
 
 The focus of the parser is complete and accurate support for the MySQL SQL dialect. The focus is not on optimizing for performance. It is expected that you will present syntactically valid queries.
 
-###Manual
+###Manual and Documentation
 
 [ParserManual](https://github.com/greenlion/PHP-SQL-Parser/wiki/Parser-Manual) - Check out the manual.
+[Documentation](https://rezonant.github.io/PHP-SQL-Parser/doc/) - API documentation
 
 ###Example Output
 
